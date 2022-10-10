@@ -107,6 +107,29 @@ a:hover {
 
 }
 
+/* hidden hamburguer nav bar */
+
+#hiddenNav {
+
+    background-color: #EEF6FC;
+
+    height: 20vh;
+    width: 100%;
+
+}
+
+.nav-bar2 {
+
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    gap: 10px;
+
+    background-color: #EEF6FC;
+
+}
 
 
 
@@ -278,16 +301,41 @@ footer, ul {
 
 
     /* HEADER HEADER HEADER */
-    .hamburguer {
+    .logo {
 
-        display: block;
+        left: 245px;
 
     }
+
 
     .nav-bar {
 
         display: none;
+    
+    }
+    
+    .hamburguer {
+    
+        display: block;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    
+        padding-bottom: 1rem;
+        
+        right: 200px;
+    
+    }
 
+    nav {
+
+        justify-content: flex-end;
+        display: flex;
+        flex-direction: column;
+    
+        gap: 10px;
+        
     }
 
 
@@ -322,6 +370,65 @@ footer, ul {
 
 
 }
+
+
+@media only screen and (min-width: 768px) {
+
+    .logo {
+
+        left: 0;
+
+    }
+
+
+
+    .nav-bar {
+
+        display: block;
+
+        display: flex;
+        flex-direction: row;
+        
+
+    }
+
+    .hamburguer {
+
+        display: none;
+    
+    }
+
+
+
+
+    nav {
+
+        display: block;
+        justify-content: flex-end;
+
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (min-width: 1024px) {
 

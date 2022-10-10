@@ -1,5 +1,44 @@
 
 
+
+// HAMBURGUER ICON FUNCTION
+
+function openMenu() {
+
+    var counter = 0 ; 
+
+    var btn = document.querySelector(`.hamburguer`) ; 
+
+    btn.onclick = function () {
+
+        document.getElementById(`hiddenNav`).style.display = `block` ; 
+
+        document.querySelector(`header`).style.height = `300px`; 
+
+        counter++ ; 
+
+
+        if (counter == 2) {
+
+        document.getElementById(`hiddenNav`).style.display = `none` ; 
+
+        document.querySelector(`header`).style.height = `100px`; 
+
+        counter = 0; 
+
+        }
+
+
+    }
+
+
+}
+
+
+
+
+
+
 // WARPS
 
 function warpHome() {

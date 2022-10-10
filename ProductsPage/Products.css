@@ -5,6 +5,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 
 }
 
@@ -117,6 +118,31 @@ li:hover {
 .logo:hover {
 
     cursor: pointer;
+
+}
+
+
+/* hidden hamburguer nav bar */
+
+#hiddenNav {
+
+    background-color: #EEF6FC;
+
+    height: 20vh;
+    width: 100%;
+
+}
+
+.nav-bar2 {
+
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    gap: 10px;
+
+    background-color: #EEF6FC;
 
 }
 
@@ -675,6 +701,7 @@ h1 {
 
 }
 
+/* HOME AUDIO PRODUCTS */
 
 /* IMG-6 */
 .prod6Container {
@@ -1001,6 +1028,13 @@ footer, ul {
 
 @media only screen and (max-width: 768px) {
 
+    .logo {
+
+        left: 245px;
+
+    }
+
+
     .nav-bar {
 
         display: none;
@@ -1016,8 +1050,19 @@ footer, ul {
         align-items: center;
     
         padding-bottom: 1rem;
+        
+        right: 200px;
     
+    }
+
+    nav {
+
+        justify-content: flex-end;
+        display: flex;
+        flex-direction: column;
     
+        gap: 10px;
+        
     }
 
 
@@ -1191,6 +1236,50 @@ h1 {
 
 
 }
+
+
+@media only screen and (min-width: 768px) {
+
+    .logo {
+
+        left: 0;
+
+    }
+
+
+
+    .nav-bar {
+
+        display: block;
+
+        display: flex;
+        flex-direction: row;
+        
+
+    }
+
+    .hamburguer {
+
+        display: none;
+    
+    }
+
+
+
+
+    nav {
+
+        display: block;
+        justify-content: flex-end;
+
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+
+}
+
 
 
 

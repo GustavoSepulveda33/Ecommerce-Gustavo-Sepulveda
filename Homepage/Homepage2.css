@@ -4,6 +4,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 
 }
 
@@ -122,14 +123,36 @@ li:hover {
 /* HAMBURGUER MENU ICON */
 .hamburguer {
 
+    top: 40px;
     display: none;
     cursor: pointer;
 
 }
 
 
+/* hidden hamburguer nav bar */
 
+#hiddenNav {
 
+    background-color: #EEF6FC;
+
+    height: 20vh;
+    width: 100%;
+
+}
+
+.nav-bar2 {
+
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    gap: 10px;
+
+    background-color: #EEF6FC;
+
+}
 
 
 /* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN*/
@@ -734,13 +757,6 @@ footer, ul {
 
 /* Header Header Header  */
 
-/* .logo {
-    
-    top: 5px;
-    left: 33%;
-
-} */
-
 
 .nav-bar {
 
@@ -1087,46 +1103,33 @@ h1 {
 
     .nav-bar {
 
-        display: none;
+        display: block;
+
+        display: flex;
+        flex-direction: row;
+        
 
     }
 
     .hamburguer {
 
-        display: block;
+        display: none;
+    
     }
 
-    .logo {
 
-        margin-right: 0;
 
-    }
 
     nav {
 
         display: block;
         justify-content: flex-end;
+
         display: flex;
         flex-direction: row;
         
     }
     
-    
-    
-    nav ul {
-    
-        display: flex;
-        flex-direction: row;
-        
-    
-    }
-    
-    .nav-item {
-    
-        display: flex;
-        flex-direction: row;
-    
-    }
     
 
     .boxes {
