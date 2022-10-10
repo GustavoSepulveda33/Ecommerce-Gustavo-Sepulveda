@@ -1,0 +1,344 @@
+
+
+html {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+
+/* BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    min-height: 100vh;
+    min-width: 100vh;
+    /* font-family: andale mono, monospace; */
+    font-family: didot, monospace;
+    background-color: #EBEBEB;
+}
+
+
+/* HEADER HEADER HEADER HEADER HEADER HEADER */
+
+header {
+
+    background-color: #EEF6FC;
+    padding: 1rem;
+    /* display: flex;
+    flex-direction: row; */
+    /* gap: 2rem; */
+    height: 100px;
+    
+}
+
+/* NAV BAR */
+nav {
+
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+
+nav ul {
+
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
+    margin-top: -0.7%;
+    gap: 2rem;
+    
+
+}
+
+.nav-item {
+
+    text-decoration: none;
+    color: #0B2D41;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bolder;
+    letter-spacing: 0.3rem;
+
+    /* transition: 400ms; */
+
+}
+
+
+a:hover {
+
+    text-decoration: line-through;
+
+}
+
+
+
+.logo {
+
+    background-image: url(../Images/rsz_m.jpg);
+    background-color: #EEF6FC ;
+    background-blend-mode: multiply;
+    background-size: cover;
+
+    height: 100px;
+    width: 100px;
+
+    
+    top: 5px;
+    left: 40px;
+
+    position: relative;
+
+}
+
+.logo:hover {
+
+    cursor: pointer;
+
+}
+
+
+
+
+/* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
+
+
+/* HERO  */
+
+#contactHero {
+
+    background-image: url(../Images/ManleyVoxbox/voxbox-sauce-circuitry.webp);
+    background-size: cover;
+    background-color: #0B2D41;
+    background-blend-mode: lighten;
+    color: #EEF6FC;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 130vh;
+    width: 100%;
+
+
+}
+
+
+/* FORM */
+.jobFormContainer, p {
+    font-size: 2rem;
+    text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.job-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+
+.jobFormContainer {
+
+    position: relative;    
+
+
+}
+
+/* INPUT LABELS */
+.label {
+    font-size: 2.5rem;
+    color: #EEF6FC;
+    font-weight: bolder;
+
+}
+
+/* EMAIL / NAME  */
+#email, #name1 {
+    padding: 1rem;
+    width: 70vw;
+}
+
+/* UPLOAD FILE */
+#upload-file {
+    padding: 1rem;
+}
+
+#upload-file {
+
+    cursor: pointer;
+
+}
+
+/* SUBMIT BUTTON */
+.submit-button {
+    padding: 1rem;
+    width: 70vw;
+    background-color: #0B2D41;
+    color: #EEF6FC;
+    font-size: 1.5rem;
+}
+
+.submit-button:hover {
+
+    cursor: pointer;
+    background-color: #c99418;
+    color: #0B2D41;
+
+}
+
+/* TEXTAREA */
+textarea {
+
+    width: 72vw;
+    height: 10vh;
+    color: gray;
+
+}
+
+/* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
+
+footer {
+
+    background-color: #EEF6FC;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    padding-bottom: 0;
+    justify-content: center;
+    
+
+}
+
+
+.footerContainer {
+
+    display: flex;
+    flex-direction: row;
+
+    
+    gap: 20vw;
+
+}
+
+
+.footerList-item {
+
+    font-size: 1.5rem;
+    color: #0B2D41;
+
+    text-decoration: none;
+
+
+}
+
+
+footer, ul {
+
+    list-style: none;
+    text-align: center;
+
+}
+
+
+.footerLabel {
+
+    border-style: solid;
+    border-width: 0.3rem;
+    border-color: #0B2D41;
+    text-align: center;
+    padding: 0.5rem;
+
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-bottom: 0.5rem;
+
+}
+
+
+
+
+
+/* MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES  */
+
+@media only screen and (max-width: 768px) {
+
+
+    /* HEADER HEADER HEADER */
+    .hamburguer {
+
+        display: block;
+
+    }
+
+    .nav-bar {
+
+        display: none;
+
+    }
+
+
+
+    #contactHero {
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        height: 180vh;
+        width: 100%;
+    
+    
+    }
+
+
+    .footerAdditionalContent {
+
+        display: none;
+
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .hamburguer {
+
+        display: none;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

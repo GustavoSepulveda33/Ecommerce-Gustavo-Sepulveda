@@ -1,0 +1,1253 @@
+
+
+html {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+
+/* BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    min-height: 100vh;
+    min-width: 100vh;
+    /* font-family: andale mono, monospace; */
+    font-family: didot, monospace;
+    background-color: #EBEBEB;
+}
+
+
+
+
+/* HEADER HEADER HEADER HEADER HEADER HEADER */
+
+header {
+
+    background-color: #EEF6FC;
+    padding: 1rem;
+    /* display: flex;
+    flex-direction: row; */
+    /* gap: 2rem; */
+    height: 100px;
+    
+}
+
+
+/* NAV BAR */
+nav {
+
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+
+nav ul {
+
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
+    margin-top: -0.7%;
+    gap: 2rem;
+    
+
+}
+
+.nav-item {
+
+    text-decoration: none;
+    color: #0B2D41;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bolder;
+    letter-spacing: 0.3rem;
+
+    transition: 400ms;
+
+}
+
+a:hover {
+
+    text-decoration: line-through;
+
+}
+
+
+
+
+li:hover {
+
+    cursor: pointer;
+
+}
+
+
+/* LOGO LOGO LOGO LOGO  */
+
+.logo {
+
+    background-image: url(../Images/rsz_m.jpg);
+    background-color: #EEF6FC ;
+    background-blend-mode: multiply;
+    background-size: cover;
+
+    height: 100px;
+    width: 100px;
+
+    
+    top: 5px;
+    left: 40px;
+
+    position: relative;
+
+}
+
+
+.logo:hover {
+
+    cursor: pointer;
+
+}
+
+
+
+/* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN*/
+
+main {
+
+    width: 100%;
+
+}
+
+
+/* HERO HERO HERO */
+#heroSection {
+
+    /* display: flex;
+    justify-content: center; */
+    max-width: 100%;
+    /* padding-bottom: 8rem; */
+
+}
+
+.heroContainer {
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    
+    background-image: url(../Images/MXR-Small-Pic.png);
+    background-size: contain;
+    background-color: #EBEBEB;
+    background-blend-mode: multiply;
+
+    height: 90vh;
+    width: 100%;
+
+    /* filter: grayscale(0); */
+
+}   
+
+
+.heroText {
+
+    display: flex;
+    align-items: center;
+
+    padding: 2rem;
+    background-color: #0B2D41;
+    
+    color: #EEF6FC;
+    font-size: 3rem;
+    /* margin: 1rem; */
+    margin-right: 0;
+    text-align: center;
+    letter-spacing: 0.5vw;
+
+    height: 20vh;
+    width: 60%;
+
+}
+
+
+
+/* in-page nav */
+.productsInnerNav {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* align-items: ; */
+    /* gap: 10px; */
+    /* margin: 0; */
+    list-style: none;
+    color: white;
+    /* text-decoration: none; */
+
+    padding: 3rem;
+
+
+}
+
+
+.InnerNav-item {
+
+    text-decoration: none;
+    border-style: solid;
+    border-color: #0B2D41;
+    border-width: 0.2rem;
+    border-radius: 10px;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+    color: red;
+    
+    width: 20vw;
+
+}
+
+
+.InnerNav-item a {
+
+    color: #0B2D41;
+
+}
+
+
+
+.InnerNav-item:hover {
+
+    background-color: #c99418;
+
+}
+
+
+
+
+/* Guide Guide Guide Guide Guide */
+
+#guideContainer {
+
+    background-color: #0B2D41;
+    position: fixed;
+    transform: rotate(90deg);
+    right: -170px;
+    top: 70vh;
+    padding: 0; 
+
+    z-index: 1;
+
+} 
+
+#guideContainer2 {
+
+    background-color: #0B2D41;
+    position: fixed;
+    transform: rotate(90deg);
+    right: -128px;
+    top: 20vh;
+    padding: 0; 
+
+    z-index: 1;
+
+} 
+
+
+
+
+
+#guide {
+
+    
+    font-size: 1.5rem;
+    margin-top: 0;
+
+
+
+    background-color: #0B2D41;
+    color: #EBEBEB;
+    padding: 0.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-bottom: 0;
+
+
+    border-color: #EBEBEB;
+    border-style: solid;
+    border-width: 0.3rem;
+
+    display: flex;
+    flex-direction: row;
+
+
+    transition: all 1s;
+
+} 
+
+/* second pop up guide bar `previous section` */
+#guide2 {
+
+    
+    font-size: 1.5rem;
+    margin-top: 0;
+
+
+
+    background-color: #0B2D41;
+    color: #EBEBEB;
+    padding: 0.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-bottom: 0;
+
+
+    border-color: #EBEBEB;
+    border-style: solid;
+    border-width: 0.3rem;
+
+    display: flex;
+    flex-direction: row;
+
+
+    transition: all 1s;
+
+} 
+
+.back2Top {
+
+    color: #EBEBEB;
+    
+
+}
+
+
+.back2Top:hover {
+
+    background-color: #EEF6FC;
+    color: #0B2D41;
+    padding: 0.5rem;
+
+}
+
+
+
+
+
+/* PRO-AUDIO PRO-AUDIO PRO-AUDIO PRO-AUDIO PRO-AUDIO PRO-AUDIO */
+
+
+#proAudioSection {
+    
+    text-align: center;
+
+    width: 100%;
+
+
+}
+
+
+/* PRO AUDIO INTRO */
+
+.proIntro {
+
+    background-color: #EBEBEB;
+    background-image: url(../Images/Roland-Sauce1.png);
+    background-size: cover;
+    background-blend-mode: multiply;
+    
+    text-align: center;
+
+    height: 100vh;
+    max-width: 98vw;
+
+    transform: scaleX(-1);
+
+    padding: 1rem;
+
+}
+
+
+h1 { 
+
+    padding: 3rem;
+
+    font-size: 8rem;
+    color: #EEF6FC;
+    background-color: #0B2D41;
+    text-decoration: underline;
+
+    box-shadow: 10px 0px 10px 0px #EEF6FC;
+
+
+    margin-left: 5vw;
+    margin-right: 5vw;
+
+    transform: scaleX(-1);
+    
+}
+
+.proSub {
+
+    color: #0B2D41;
+    font-size: 1.5rem;
+    font-weight: 400;
+    background-color: #EBEBEB;
+
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding: 2rem;
+
+    box-shadow: 10px 0px 10px 0px #0B2D41;
+
+
+    transform: scaleX(-1);
+
+}
+
+
+
+/* PRO-AUDIO PRODUCTS | PRO-AUDIO PRODUCTS | PRO-AUDIO PRODUCTS | PRO-AUDIO PRODUCTS |*/
+
+
+/* Product container universal (pro and home audio) */
+#test {
+
+    display: flex;
+    /* flex-direction: row-reverse; */
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+
+    /* background-color: #BEC5AD; */
+
+    height: 100vh;
+    
+}
+
+
+/* IMG-1 */
+.prod1Container {
+
+    background-color: #e4e6a2;
+    box-shadow: 10px 10px 10px 10px black;
+
+}
+
+.Img1 {
+
+    background-image: url(../Images/ManleyVoxbox/voxbox-top-down-view-copy.jpg);
+    background-size: cover;
+    background-color: #e4e6a2;
+    background-blend-mode: multiply;
+
+    height: 50vh;
+    width: 50vw;
+
+    max-width: 50vw;
+
+
+}
+
+/* IMG-2 */
+.prod2Container {
+
+    background-color: #b6bcdb;
+    box-shadow: 10px 10px 10px 10px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Img2 {
+
+    background-image: url(../Images/Rupert-Neve-5024-Quad-Mic-Preamp/5024-Front-View.png);
+    background-size: contain;
+    background-color: #b6bcdb;
+    background-blend-mode: multiply;
+
+    height: 50vh;
+    width: 50vw;
+
+    max-width: 50vw;
+}
+
+
+/* IMG-3 */
+.prod3Container {
+
+    background-color: #f1a66c;
+    box-shadow: 10px 10px 10px 10px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.Img3 {
+
+    background-image: url(../Images/TeletronixLA2A/LA2A-Front-View.png);
+    background-size: cover;
+    background-color: #f1a66c;
+    background-blend-mode: multiply;
+
+    height: 50vh;
+    width: 50vw;
+
+    max-width: 50vw;
+
+}
+
+/* IMG-4 */
+.prod4Container {
+
+    background-color: #BEC5AD;
+    box-shadow: 10px 10px 10px 10px black;
+
+}
+
+.Img4 {
+
+    background-image: url(../Images/RoyerR121-Studio-Ribbon-Mic/R121-Front-View.png);
+    background-size: contain;
+    background-color: #BEC5AD;
+    background-blend-mode: multiply;
+
+    height: 50vh;
+    width: 50vw;
+
+    max-width: 50vw;
+
+}
+
+/* IMG-5 */
+.prod5Container {
+
+    background-color: #caf3ff;
+    box-shadow: 10px 10px 10px 10px black;
+
+}
+
+.Img5 {
+
+    background-image: url(../Images/Allen&Heath-SQ5/SQ5-Front-View.png);
+    background-size: cover;
+    background-color: #caf3ff;
+    background-blend-mode: multiply;
+
+    height: 60vh;
+    width: 50vw;
+
+    max-width: 50vw;
+
+}
+
+
+
+/* HIDDEN `SHOW MORE` INFORMATION */
+#prod1, #prod2, #prod3, #prod4, #prod5, #prod6, #prod7, #prod8, #prod9, #prod10 {
+
+    /* background-color: #BEC5AD;
+
+    padding: 2rem; */
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    color: #0B2D41;    
+
+
+}
+
+.productName {
+
+    font-size: 4rem;
+    color: #0B2D41;
+    margin-bottom: 0;
+
+
+}
+
+
+.price {
+
+    font-size: 1.5rem;
+
+}
+
+.description {
+
+    font-size: 1.5rem;
+    max-width: 700px;
+    text-align: center;
+
+}
+
+
+
+/* HOME-AUDIO HOME-AUDIO HOME-AUDIO HOME-AUDIO HOME-AUDIO HOME-AUDIO */
+
+#homeAudioSection {
+    
+    text-align: center;
+
+    width: 100%;
+
+
+}
+
+
+
+/* HOME AUDIO INTRO */
+.homeIntro {
+
+    background-color: #cca4e8;
+    background-image: url(../Images/PedalBackground.jpeg);
+    background-size: contain;
+    background-blend-mode: multiply;
+    
+    text-align: center;
+
+    height: 100vh;
+    max-width: 98vw;
+
+    transform: scaleX(-1);
+
+    padding: 1rem;
+
+}
+
+
+h1 { 
+
+    padding: 3rem;
+
+    font-size: 8rem;
+    color: #EEF6FC;
+    background-color: #0B2D41;
+    text-decoration: underline;
+
+    box-shadow: 10px 0px 10px 0px #EEF6FC;
+
+
+    margin-left: 5vw;
+    margin-right: 5vw;
+
+    transform: scaleX(-1);
+    
+}
+
+.homeSub {
+
+    color: #0B2D41;
+    font-size: 1.5rem;
+    font-weight: 400;
+    background-color: #EBEBEB;
+
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding: 2rem;
+
+    box-shadow: 10px 0px 10px 0px #0B2D41;
+
+
+    transform: scaleX(-1);
+
+}
+
+
+/* IMG-6 */
+.prod6Container {
+
+    background-color: #a7a7a7;
+    box-shadow: 10px 10px 10px 10px black;
+
+}
+
+.Img6 {
+
+    background-image: url(../Images/Beyerdynamic-DT-990Pro/990-Side-View.png);
+    background-size: contain;
+    background-color: #a7a7a7;
+    background-blend-mode: multiply;
+
+    height: 50vh;
+    width: 50vw;
+
+    max-width: 50vw;
+
+}
+
+/* IMG-7 */
+.prod7Container {
+
+    background-color: #ffecf4d9;
+    box-shadow: 10px 10px 10px 10px black;
+
+}
+
+.Img7 {
+
+    background-image: url(../Images/Dunlop-CryBaby-WahWah/CryBaby-Side-View2.png);
+    background-size: contain;
+    background-color: #ffecf4d9;
+    background-blend-mode: multiply;
+
+    height: 50vh;
+    width: 50vw;
+
+    max-width: 50vw;
+
+}
+
+/* IMG-8 */
+.prod8Container {
+
+    background-color: #caf3ff;
+    box-shadow: 10px 10px 10px 10px black;
+
+}
+
+.Img8 {
+
+    background-image: url(../Images/Dunlop-Hendrix-FuzzFace-Distortion-Pedal/FuzzFace-Front-View.png);
+    background-size: contain;
+    background-color: #caf3ff;
+    background-blend-mode: multiply;
+
+    height: 50vh;
+    width: 50vw;
+
+    max-width: 50vw;
+
+}
+
+
+/* IMG-9 */
+.prod9Container {
+
+    background-color: #91e1d6;
+    box-shadow: 10px 10px 10px 10px black;
+
+}
+
+.Img9 {
+
+    background-image: url(../Images/MXR-Chorus-Pedal/MXR-Chorus-Top-View.png);
+    background-size: contain;
+    background-color: #91e1d6;
+    background-blend-mode: multiply;
+
+    height: 50vh;
+    width: 50vw;
+
+    max-width: 50vw;
+
+}
+
+
+/* IMG-10 */
+.prod10Container {
+
+    background-color: #cbfec8;
+    box-shadow: 10px 10px 10px 10px black;
+
+}
+
+.Img10 {
+
+    background-image: url(../Images/BOSS-RE-202/BOSS-RE202-Front-View.png);
+    background-size: cover;
+    background-color: #cbfec8;
+    background-blend-mode: multiply;
+
+    height: 60vh;
+    width: 50vw;
+
+    max-width: 50vw;
+
+}
+
+/* IMG-11 */
+.prod11Container {
+
+    background-color: #fdffc2;
+    box-shadow: 10px 10px 10px 10px black;
+
+}
+
+.Img11 {
+
+    background-image: url(../Images/Way-Huge-Supa-Puss-Delay-Pedal/Supa-Puss-Front-View.png);
+    background-size: cover;
+    background-color: #fdffc2;
+    background-blend-mode: multiply;
+
+    height: 60vh;
+    width: 50vw;
+
+    max-width: 50vw;
+
+}
+
+
+/* IMG-12 */
+.prod12Container {
+
+    background-color: #ffe58f;
+    box-shadow: 10px 10px 10px 10px black;
+
+}
+
+.Img12 {
+
+    background-image: url(../Images/TRex-Mudhoney-II-Distortion-Pedal/TRex-Front-View.png);
+    background-size: cover;
+    background-color: #ffe58f;
+    background-blend-mode: multiply;
+
+    height: 60vh;
+    width: 50vw;
+
+    max-width: 50vw;
+
+}
+
+
+/* LEARN MORE BUTTONS */
+
+.btnContainer {
+
+    text-align: center;
+    width: 60vw;
+
+}
+
+.prodLearnMoreBtn, .prodLearnMoreBtn1, .prodLearnMoreBtn2, .prodLearnMoreBtn3, .prodLearnMoreBtn4, .prodLearnMoreBtn5, .prodLearnMoreBtn6, .prodLearnMoreBtn7, .prodLearnMoreBtn8, .prodLearnMoreBtn9, .prodLearnMoreBtn10, .prodLearnMoreBtn11, .buyNow  {
+    border-style: solid;
+    border-color: #0B2D41;
+    border-width: 0.3rem;
+    border-radius: 10px;
+
+    /* background-color: #BEC5AD; */
+
+    /* width: 10vw; */
+    
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #0B2D41;
+
+    /* max-width: 40vw;
+
+    display: flex;
+    justify-content: center; */
+
+    
+}
+
+.prodLearnMoreBtn:hover, .prodLearnMoreBtn1:hover, .prodLearnMoreBtn2:hover, .prodLearnMoreBtn3:hover, .prodLearnMoreBtn4:hover, .prodLearnMoreBtn5:hover, .prodLearnMoreBtn6:hover, .prodLearnMoreBtn7:hover, .prodLearnMoreBtn8:hover, .prodLearnMoreBtn9:hover, .prodLearnMoreBtn10:hover, .prodLearnMoreBtn11:hover, .buyNow:hover {
+
+    cursor: pointer;
+
+}
+
+
+#hidden , #hidden2, #hidden3, #hidden4, #hidden5, #hidden6, #hidden7, #hidden8, #hidden9, #hidden10, #hidden11, #hidden12  {
+
+    height: 75vh;
+    width: 95.5vw;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column; 
+    /* flex-wrap: wrap; */
+
+    padding: 2rem;
+}
+
+/* HIDDEN */
+.imgsContainer {
+
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+
+
+
+}
+
+#hiddenImg {
+
+    height: 20vh;
+    width: 20vw;
+
+    transition: 1s;
+
+
+
+}
+
+
+#hiddenImg:hover {
+
+    height: 41vh;
+    width: 50vw;
+
+}
+
+.specs {
+
+    color: #0B2D41;
+    font-size: 2rem;
+
+}
+
+.specLabel {
+
+    color: #0B2D41;
+    font-size: 3rem;
+
+}
+
+
+
+
+
+/* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
+
+footer {
+
+    background-color: #EEF6FC;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    padding-bottom: 0;
+    justify-content: center;
+    
+
+}
+
+
+.footerContainer {
+
+    display: flex;
+    flex-direction: row;
+
+    
+    gap: 20vw;
+
+}
+
+
+.footerList-item {
+
+    font-size: 1.5rem;
+    color: #0B2D41;
+
+    text-decoration: none;
+
+
+}
+
+
+footer, ul {
+
+    list-style: none;
+    text-align: center;
+
+}
+
+
+.footerLabel {
+
+    border-style: solid;
+    border-width: 0.3rem;
+    border-color: #0B2D41;
+    text-align: center;
+    padding: 0.5rem;
+
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+}
+
+
+
+
+
+
+/* MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES  */
+
+@media only screen and (max-width: 768px) {
+
+    .nav-bar {
+
+        display: none;
+    
+    }
+    
+    .hamburguer {
+    
+        display: block;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    
+        padding-bottom: 1rem;
+    
+    
+    }
+
+
+    
+    /* IN PAGE NAVE */
+    .InnerNav-item {
+    
+        font-size: 1.3rem;
+
+        
+        width: 40vw;
+    
+    }
+
+
+/* PRO AUDIO INTRO SECTION */
+
+
+
+
+.proIntro {
+
+    height: 80vh;
+    max-width: 250vw;
+
+}
+
+
+h1 { 
+
+    padding: 3rem;
+    font-size: 5rem;
+
+}
+
+.proSub {
+
+
+    font-size: 1rem;
+}
+
+
+
+
+/* PRODUCT SLIDES */
+
+.productName {
+
+    font-size: 3rem;
+
+}
+
+
+.price {
+
+    font-size: 1.5rem;
+
+}
+
+.description {
+
+    font-size: 1.3rem;
+    max-width: 700px;
+    text-align: center;
+
+}
+
+/* PRODUCTS `SHOW MORE` SECTION */
+
+#hidden , #hidden2, #hidden3, #hidden4, #hidden5, #hidden6, #hidden7, #hidden8, #hidden9, #hidden10, #hidden11, #hidden12  {
+
+    height: 85vh;
+    width: 670px;
+
+}
+
+
+#test {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+
+    /* background-color: #BEC5AD; */
+
+    height: 150vh;
+    
+}
+
+
+.Img1, .Img2, .Img3, .Img4, .Img5, .Img6, .Img7, .Img8, .Img9, .Img10, .Img11, .Img12 {
+
+    display: none;
+
+}
+
+
+#guideContainer, #guideContainer2 {
+
+    display: none;
+
+}
+
+
+/* HOME AUDIO INTRO */
+
+.homeIntro {
+
+    height: 100vh;
+    max-width: 230vw;
+
+}
+
+
+h1 { 
+
+    padding: 3rem;
+
+    font-size: 5rem;
+    color: #EEF6FC;
+    background-color: #0B2D41;
+    text-decoration: underline;
+
+    box-shadow: 10px 0px 10px 0px #EEF6FC;
+
+
+    margin-left: 5vw;
+    margin-right: 5vw;
+
+    transform: scaleX(-1);
+    
+}
+
+.homeSub {
+
+    color: #0B2D41;
+    font-size: 1.5rem;
+    font-weight: 400;
+    background-color: #EBEBEB;
+
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding: 2rem;
+
+    box-shadow: 10px 0px 10px 0px #0B2D41;
+
+
+    transform: scaleX(-1);
+
+}
+
+
+/* FOOTER */
+
+.footerAdditionalContent {
+
+    display: none;
+
+}
+
+
+
+
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    #hidden , #hidden2, #hidden3, #hidden4, #hidden5, #hidden6, #hidden7, #hidden8, #hidden9, #hidden10, #hidden11, #hidden12  {
+
+        height: 85vh;
+        width: 705px;
+    
+    }
+
+
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+
+    #hidden , #hidden2, #hidden3, #hidden4, #hidden5, #hidden6, #hidden7, #hidden8, #hidden9, #hidden10, #hidden11, #hidden12  {
+
+        height: 75vh;
+        width: 960px;
+    
+    }
+
+    .hamburguer {
+
+        display: none;
+
+    }
+
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+
+    #hidden , #hidden2, #hidden3, #hidden4, #hidden5, #hidden6, #hidden7, #hidden8, #hidden9, #hidden10, #hidden11, #hidden12  {
+
+        height: 75vh;
+        width: 95.5vw;
+    
+        background-color: white;
+    
+        display: flex;
+        flex-direction: column; 
+        /* flex-wrap: wrap; */
+    
+        padding: 2rem;
+    }
+
+
+
+
+    .hamburguer {
+
+        display: none;
+
+    }
+
+}
+
+
+
+
+
+

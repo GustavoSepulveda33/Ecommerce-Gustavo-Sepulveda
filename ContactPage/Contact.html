@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce: Contact</title>
+    <link href="./Contact.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/523607ac4d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="fastTravelTop"></div>
+
+    <header>
+
+        <!-- LOGO -->
+        <!-- function so that clicking logo sends you to homepage2.html -->
+        <aside class="logo" onclick="warpHome()"></aside>
+
+        <nav>
+            <!-- <div class="logo"></div> -->
+            <ul class="nav-bar">
+                <li ><a class="nav-item" href="../Homepage/Homepage2.html">home</a></li>
+                <!-- <li ><a class="nav-item" href="../About Page/About.html">about</a></li> -->
+                <li ><a class="nav-item" href="../ProductsPage/Products.html">products</a></li>
+                <li ><a class="nav-item" href="./Contact.html">contact</a></li>
+                <li ><i class="fa-solid fa-cart-shopping"></i></li>
+            </ul>
+
+            <!-- HUMBURGUER ICON -->
+            <div class="hamburguer" onclick="openMenu()"><i class="fa-solid fa-bars"></i></div>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- FORM -->
+        <section id="contactHero">
+
+            <div class="jobFormContainer">
+                <form class="job-form">
+                
+                    <!-- FULL NAME -->
+                    <label for="name1" class="label">Full Name</label>
+                    <br>
+                    <input
+                        type="text"
+                        id="name1"
+                        name="Fullname"
+                        placeholder="Your Full Name Here..."
+                        required/>
+                
+                <br>
+                    <!-- EMAIL -->
+                    <label for="email" class="label">Email</label>
+                    <br>
+                    <input
+                        type="email"
+                        id="email"
+                        name="Email"
+                        placeholder="Enter valid email address here..."
+                        required/>
+
+                <br>
+
+                    <!-- TEXTAREA -->
+                    <label for="message" class="label">Leave a message</label>
+                    <textarea id="message" required >Leave Message Here...</textarea>
+
+                <br>
+                
+                    <!-- UPLOAD FILE -->
+                    <label for="upload-file" class="label">Upload CV</label>
+                    <p>Upload any CV or pertinent document here.</p>
+                    <input
+                        type="file"
+                        id="upload-file"
+                        name="upload-file"/>
+                
+                <br>
+                    <!-- SUBMIT -->
+                    <button class="submit-button">Submit</button>
+                </form>
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footerContainer">
+
+            <!-- SOCIAL MEDIA ICONS -->
+            <div class="footerSocialMedia">
+
+                <ul>
+                    <li class="footerLabel">SOCIAL MEDIA</li>
+                    
+                    <!-- Facebook -->
+                    <li ><a class="footerList-item" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <!-- Twitter -->
+                    <li ><a class="footerList-item" href="https://twitter.com/?lang=en" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                    <!-- Instagram -->
+                    <li ><a class="footerList-item" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <!-- Amazon -->
+                    <li ><a class="footerList-item" href="https://www.amazon.com/" target="_blank"><i class="fa-brands fa-amazon"></i></a></li>
+                </ul>
+
+            </div>
+
+            <!-- PAGE WARPS -->
+            <div class="footerPageWarps">
+
+                <ul>
+                    <li class="footerLabel">PAGE WARPS</li>
+                    
+                    <li ><a class="footerList-item" href="../Homepage/Homepage2.html">home</a></li>
+                    <!-- <li ><a class="footerList-item" href="../About Page/About.html">about</a></li> -->
+                    <li ><a class="footerList-item" href="../ProductsPage/Products.html">products</a></li>
+                    <li ><a class="footerList-item" href="./Contact.html">contact</a></li>
+                </ul>
+
+            </div>
+
+            <!-- ADDITIONAL CONTENT -->
+            <div class="footerAdditionalContent">
+
+                <ul>
+                    <li class="footerLabel">ADDITIONAL CONTENT</li>
+                    
+                    <li ><a class="footerList-item" href="">PDFs & Manuals</a></li>
+                    <li ><a class="footerList-item" href="">Tech Support</a></li>
+                    <li ><a class="footerList-item" href="">FAQ</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+<script src="./Contact.js"></script>
+</body>
+</html>

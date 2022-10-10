@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce: Homepage2</title>
+    <link href="./Homepage2.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/523607ac4d.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    
+    <!-- #fastTravelTop is for warping to top of the page from the `guide` on the side of page. -->
+    <div id="fastTravelTop"></div> 
+
+
+
+    <!-- HEADER HEADER HEADER HEADER HEADER -->
+    <header>
+
+        <!-- function so that clicking logo sends you to homepage2.html -->
+        <aside class="logo" onclick="warpHome()"></aside>
+
+        <nav>
+            <!-- <div class="logo"></div> -->
+            <ul class="nav-bar">
+                <li ><a class="nav-item" href="./Homepage2.html">home</a></li>
+                <!-- <li ><a class="nav-item" href="../About Page/About.html">about</a></li> -->
+                <li ><a class="nav-item" href="../ProductsPage/Products.html">products</a></li>
+                <li ><a class="nav-item" href="../ContactPage/Contact.html">contact</a></li>
+                <li ><i class="fa-solid fa-cart-shopping"></i></li>
+            </ul>
+
+            <!-- HAMBURGUER MENU ICON -->
+            <div class="hamburguer" onclick="openMenu()"><i class="fa-solid fa-bars"></i></div>
+
+        </nav>
+
+
+
+    </header>
+
+    <main>
+    
+    <!-- HERO -->
+    <section id="hero">
+
+        <h1>MARKET AUDIO</h1>
+        <br>
+        <p class="subName"> QUALITY | COMMUNITY | TECHNOLOGY </p>
+
+    </section>
+
+
+
+    <!-- GUIDE SIDEBAR -->
+    <div id="guideContainer">
+
+        <p id="guide" style="display: none;">home  -----  <a class="back2Top" href="#fastTravelTop" style="text-decoration: none;">back to top</a></p>
+        
+    </div>
+
+
+
+
+    <!-- SLIDESHOW -->
+    <section id="slideSection">
+
+        <div class="slideshow">
+
+            <!-- SLIDE IMGs -->
+
+            <!-- second `active` class will be manipulated w/ js later. Used to denote which slide is on top/visible -->
+
+            <div class="slide active">
+                <!-- <p class="slideText">first slide</p> -->
+                <img src="../Images/ManleyVoxbox/voxbox-circuitry-shot.webp" alt="Manely Voxbox">
+            </div>
+
+            <div class="slide">
+                <img src="../Images/Dunlop-Hendrix-FuzzFace-Distortion-Pedal/FuzzFace-Front-View.png" alt="Dunlop FuzzFace">
+            </div>
+
+            <div class="slide">
+                <img src="../Images/Roland-Sacuce2.png" alt="Roland Tape Machine">
+            </div>
+
+            <div class="slide">
+                <img src="../Images/BOSS-RE-202/BOSS-RE202-Sauce2.png" alt="BOSS RE-202">
+            </div>
+
+
+
+            <!-- NEXT / PREV BUTTONS --> 
+
+            <div class="buttonContainer">
+
+                <!-- <button id="prevBtn" aria-label="Previous Slide"><i class="fa-solid fa-arrow-left"></i></button>  
+                <button id="nextBtn" aria-label="Next Slide"><i class="fa-solid fa-arrow-right"></i></button> -->
+    
+                <div id="prevBtn"><i class="fa-solid fa-arrow-left"></i></div>
+                <div id="nextBtn"><i class="fa-solid fa-arrow-right"></i></div>
+    
+    
+                <!-- Aria labels are used mostly for assistive technology. It is for when a interactive element doesnt have  -->
+                <!--        something on screen to reference it. In this case, the `Next` and  `Prev` buttons don't say next or previous on them -->
+                <!--        nor does it say it on screen. The aria label makes it `visible` for assistive tech. like screen readers. -->
+                <!--        **removed aria labels because of HTML validation. Look into aria labels later for accesibility. -->
+    
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- CATEGORY BOXES -->
+    <section id="prodCatBoxes">
+
+        <div class="boxes">
+            
+            <!-- PRO AUDIO CATEGORY BOX -->
+            <div class="box1" onclick="productWarpPro()">
+                <p class="description">Pro Audio</p>
+            </div>
+            
+            <!-- HOME AUDIO CATEGORY BOX -->
+            <div class="box2" onclick="productWarpHome()">
+                <p class="description">Home Audio</p>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <br>
+    <br>
+
+
+
+
+
+    <!-- ABOUT US PAGE LINK OFF -->
+    <section id="aboutUsBox">
+
+        <div class="aboutHomeContainer">
+
+            <p class="homeAboutUs">Our team of talented audiophiles has been dedicated to providing the best quality products and services for over a decade. 
+                <br>
+                <br>
+                <br>
+                <a class="warpToProducts" href="" style="text-decoration: none;">Learn More!</a>
+            </p>
+
+            <!-- <a class="warpToProducts" href="" style="text-decoration: none;">Learn More!</a> -->
+
+        </div>
+
+    </section>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <!-- CONTACT US PAGE LINK OFF -->
+    <section id="contactUsHome">
+
+        <div class="homeContactContainer">
+
+            <div class="colorOverlay"></div>
+            <div class="colorOverlay2"></div>
+
+            <p class="homeContactText">
+
+                Are you looking for technical support or service? <br>
+                Do you have any questions about a product warranty or specs? <br>
+
+                Leave us a message and someone from our talented team of <br>professionals with reach out shortly to help in any way we can!
+
+            </p>
+
+            <!-- <p class="contactLearnMore"> -->
+                <a class="contactLearnMore" href="" style="text-decoration: none;">Learn More!</a>
+            <!-- </p> -->
+
+        </div>
+
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footerContainer">
+
+
+            <!-- SOCIAL MEDIA ICONS -->
+            <div class="footerSocialMedia">
+
+                <ul>
+                    <li class="footerLabel">SOCIAL MEDIA</li>
+                    
+                    <!-- Facebook -->
+                    <li ><a class="footerList-item" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <!-- Twitter -->
+                    <li ><a class="footerList-item" href="https://twitter.com/?lang=en" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                    <!-- Instagram -->
+                    <li ><a class="footerList-item" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <!-- Amazon -->
+                    <li ><a class="footerList-item" href="https://www.amazon.com/" target="_blank"><i class="fa-brands fa-amazon"></i></a></li>
+                </ul>
+
+            </div>
+
+            <!-- PAGE WARPS -->
+            <div class="footerPageWarps">
+
+                <ul>
+                    <li class="footerLabel">PAGE WARPS</li>
+                    
+                    <li ><a class="footerList-item" href="./Homepage2.html">home</a></li>
+                    <!-- <li ><a class="footerList-item" href="../About Page/About.html">about</a></li> -->
+                    <li ><a class="footerList-item" href="../ProductsPage/Products.html">products</a></li>
+                    <li ><a class="footerList-item" href="../ContactPage/Contact.html">contact</a></li>
+                </ul>
+
+            </div>
+
+            <!-- ADDITIONAL CONTENT -->
+            <div class="footerAdditionalContent">
+
+                <ul>
+                    <li class="footerLabel">ADDITIONAL CONTENT</li>
+                    
+                    <li ><a class="footerList-item" href="">PDFs & Manuals</a></li>
+                    <li ><a class="footerList-item" href="">Tech Support</a></li>
+                    <li ><a class="footerList-item" href="">FAQ</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+<script src="./Homepage2.js"></script>
+</body>
+</html>

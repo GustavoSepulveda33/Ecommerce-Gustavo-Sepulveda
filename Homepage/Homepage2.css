@@ -1,0 +1,1149 @@
+
+html {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+
+/* BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    min-height: 100vh;
+    min-width: 100vw;
+    /* font-family: andale mono, monospace; */
+    font-family: didot, monospace;
+    background-color: #EBEBEB;
+}
+
+
+
+
+/* HEADER HEADER HEADER HEADER HEADER HEADER */
+
+header {
+
+    background-color: #EEF6FC;
+    padding: 1rem;
+    /* display: flex;
+    flex-direction: row; */
+    /* gap: 2rem; */
+    height: 100px;
+    
+}
+
+/* NAV BAR */
+nav {
+
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+
+nav ul {
+
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
+    margin-top: -0.7%;
+    gap: 2rem;
+    
+
+}
+
+.nav-item {
+
+    text-decoration: none;
+    color: #0B2D41;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bolder;
+    letter-spacing: 0.3rem;
+
+    transition: 400ms;
+
+}
+
+a:hover {
+
+    text-decoration: line-through;
+
+}
+
+
+
+li:hover {
+
+    cursor: pointer;
+
+}
+
+
+/* LOGO LOGO LOGO LOGO */
+
+.logo {
+
+    background-image: url(../Images/rsz_m.jpg);
+    background-color: #EEF6FC ;
+    background-blend-mode: multiply;
+    background-size: cover;
+
+    height: 100px;
+    width: 100px;
+
+    
+    top: 5px;
+    left: 40px;
+
+    position: relative;
+
+}
+
+
+.logo:hover {
+
+    cursor: pointer;
+
+}
+
+
+
+/* HAMBURGUER MENU ICON */
+.hamburguer {
+
+    display: none;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+/* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN*/
+
+main {
+
+    background-image: url(../Images/PultecGraph.png);
+    background-color: #EBEBEB;
+    background-blend-mode: lighten;
+    background-size: cover;
+
+}
+
+/* MAIN-PAGE HERO */
+
+#hero {
+
+    
+    height: 40vh;
+    width: auto;
+    padding: 1rem;
+
+}
+
+
+
+
+ /* Company Name */
+h1 {  
+
+    font-size: 8rem;
+    text-align: center;
+    letter-spacing: 1.5rem;
+    color: #0B2D41;
+    margin-bottom: 0;
+    margin-top: 3rem;
+
+}
+
+/* hero sub title */
+.subName {
+
+    font-size: 2.5rem;
+    /* font-style: italic; */
+    text-align: center;
+    padding: 1rem;
+    color: #0B2D41;
+    margin-top: 0.2rem;
+    font-weight: 400;
+
+
+
+}
+
+
+
+
+
+
+/* Guide Guide Guide Guide Guide (SIDEBAR) */ 
+
+#guideContainer {
+
+    /* background-color: red;
+    padding: 2rem; */
+    position: fixed;
+    transform: rotate(90deg);
+    right: -140px;
+    padding: 0; 
+
+    z-index: 1;
+
+}
+
+
+#guide {
+
+    
+    /* position: fixed;
+    transform: rotate(90deg); */
+    font-size: 1.5rem;
+    right: 0;
+    margin-top: 0;
+
+
+    background-color: #0B2D41;
+    /* background-image: linear-gradient(to right, #EEF6FC #FFFFFF); */
+    color: #EBEBEB;
+    padding: 0.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+    border-color: #EBEBEB;
+    border-style: solid;
+    border-width: 0.3rem;
+
+    display: flex;
+    flex-direction: row;
+
+    /* z-index: 1; */
+    transition: all 1s;
+
+}
+
+
+/* Guide BACT TO TOP BTN */
+.back2Top {
+
+    color: #EBEBEB;
+
+}
+
+
+.back2Top:hover {
+
+    background-color: #EEF6FC;
+    color: #0B2D41;
+    padding: 0.5rem;
+
+}
+
+
+
+
+
+
+/* SLIDESHOW SLIDESHOW SLIDESHOW SLIDESHOW */
+
+#slideSection {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10vh;
+
+}
+
+
+.slideshow {
+
+    overflow: hidden;
+    max-width: 90vw;
+    height: 80vh;
+
+    position: relative;   
+    /* important so buttons stay inside same div but above the photos.*/
+
+    box-shadow: 0px 0px 10px 10px #0B2D41 ;
+}
+
+
+.slideshow .slide, .slideshow .silent {
+
+    display: none;
+
+}
+
+.slideshow .slide img {
+
+    width: 100%; 
+    max-width: 85vw;
+    height: auto;
+
+    /* background-size: contain; */
+
+}
+
+
+
+.slideshow .slide.active {
+
+    display: block;
+    animation: fade 0.5s;
+
+}
+
+
+/* SLIDESHOW ANIMATION */
+@keyframes fade { 
+
+    0% {
+
+        opacity: 0;
+
+    } 
+    100% {
+
+        opacity: 1;
+        transform: opacity linear;
+
+    }
+
+}
+
+
+/* NEXT / PREV BUTTONS */
+
+.buttonContainer {
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);  
+    /* Ensures that the buttons are always in the center of the div. Other methods don't take into count the height of the actual button/padding. */
+
+
+}
+
+
+
+#nextBtn, #prevBtn {
+
+    background-color: #EEF6FC;
+    color: #0B2D41;
+    border-style: solid;
+    border-color: #0B2D41;
+    border-width: 0.2rem;
+
+    padding: 2rem;
+
+    /* width: 1vw;
+    height: 2vh; */
+
+    cursor: pointer;
+
+    /* overflow: visible; */
+
+    filter: none;
+    transition: 0.3s;
+}
+
+
+#nextBtn {
+
+    border-right: none;
+
+}
+
+#prevBtn {
+
+    border-left: none;
+
+}
+
+#nextBtn:hover, #prevBtn:hover {
+
+    background-color: #c99418;
+    color: white;
+
+}
+
+
+
+
+
+
+/* PRODUCT CATEGORY BOXES | PRODUCT CATEGORY BOXES | PRODUCT CATEGORY BOXES | PRODUCT CATEGORY BOXES */
+
+#prodCatBoxes {
+
+    box-shadow: 10px 0px 10px 0px #0B2D41;
+    
+    margin-top: 10vh;
+
+}
+
+
+.boxes {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #0B2D41;
+
+}
+
+/* PRO AUDIO BOX */
+.box1 { 
+
+    background-image: url(../Images/ManleyVoxbox/voxbox-circuitry-shot.webp);
+    background-size: cover;
+    background-color: #EEF6FC;
+    background-blend-mode: multiply;
+    /* color: black; */
+    padding: 12rem;
+
+
+    height: 30vh;
+    width: 15vw;
+
+    margin-left: 40px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+
+}
+
+/* HOME AUDIO BOX */
+.box2 { 
+
+    background-image: url(../Images/Headphones.png);
+    background-size: cover;
+    background-color: #0B2D41;
+    color: black;
+    padding: 12rem;
+
+    height: 30vh;
+    width: 15vw;
+
+    margin-right: 40px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+
+}
+
+
+.box1:hover, .box2:hover {
+
+    box-shadow: 10px 10px 10px 0 #EEF6FC;
+
+    background-color: #0B2D41;
+    background-blend-mode: lighten;
+    
+    cursor: pointer;
+
+}
+
+/* BOX LABELS */
+.description {
+
+    background-color: #c99418;
+    width: 20vw;
+    font-size: 4rem;
+    color: #EBEBEB;
+    text-align: center;
+
+    padding-left: 8rem;
+
+}
+
+
+
+
+
+
+/* HOME ABOUT US LINK OFF | HOME ABOUT US LINK OFF | HOME ABOUT US LINK OFF | HOME ABOUT US LINK OFF | HOME ABOUT US LINK OFF |  */
+
+#aboutUsBox {
+
+    background-image: url(../Images/tube.png);
+    background-color: #0b2d41a5;
+    background-blend-mode: multiply;
+    background-size: cover;
+
+    /* transform: rotate(180deg); */
+    height: 60vh;
+    width: 100%;
+    
+    margin-top: 0;
+    /* margin-bottom: 3rem;
+    padding: 0; */
+
+    box-shadow: 10px 0px 10px 0px #0B2D41;
+
+
+}
+
+.homeAboutUs {
+
+    /* transform: rotate(180deg);
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    background-color: #EEF6FC; */
+
+
+    /* background-image: url(../Images/tube.png);
+    background-color: #0b2d4186;
+    background-blend-mode: multiply;
+    background-size: cover; */
+
+    color: #EEF6FC;
+    text-align: center;
+    font-size: bolder;
+
+
+    font-size: 2.5rem;
+    padding: 5rem;
+
+    /* transform: rotate(180deg); */
+    
+    
+
+}
+
+/* WARP TO PRODUCTS ANCHOR <a> */
+.warpToProducts {
+
+    border-style: solid;
+    border-color: #EEF6FC;
+    border-radius: 55%;
+    border-width: 1rem;
+    padding: 1rem;
+
+    /* position: absolute;  */
+
+    text-align: center;
+    color: #EEF6FC;
+
+    padding: 2rem;
+
+
+
+}
+
+
+
+
+
+
+/* HOME CONTACT LINK OFF | HOME CONTACT LINK OFF | HOME CONTACT LINK OFF | HOME CONTACT LINK OFF | HOME CONTACT LINK OFF | */
+
+#contactUsHome {
+
+    background-image: url(../Images/ManleyVoxbox/voxbox-circuitry-shot-2.webp);
+    transform: scaleX(-1);
+    background-size: cover;
+
+    /* position: relative; */
+    height: 80vh;
+    width: 100%;
+
+    box-shadow: 10px 0px 10px 0px #0B2D41;
+
+}
+
+
+.homeContactContainer {
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    /* align-items: flex-end; */
+
+
+}
+
+.colorOverlay {
+
+    position: absolute;
+    background-color: #0B2D41;
+
+    width: 50%;
+    height: 80vh;
+
+    transform: skew(15deg);
+    right: 10%;
+    /* padding-right: 6rem; */
+    
+    
+
+
+}
+
+.colorOverlay2 {
+
+    position: absolute;
+    background-color: #0B2D41;
+
+    width: 50%;
+    height: 80vh;
+
+    /* transform: skew(15deg); */
+    right: 0;
+    /* padding-right: 6rem; */
+    
+    
+
+
+}
+
+
+.homeContactText, .contactLearnMore {
+
+    transform: scaleX(-1);
+    color: #EEF6FC;
+
+}
+
+.homeContactText {
+
+    font-size: 1.8rem;
+    padding: 1rem;
+    padding-top: 2rem;
+
+    text-align: left;
+    line-height: 250%;
+
+}
+
+/* ABOUT US PAGE LINK OFF ANCHOR <a> */
+.contactLearnMore {
+
+    font-size: 1rem;
+    border-style: solid;
+    border-color: #EEF6FC;
+    border-width: 0.5rem;
+    border-radius: 55%;
+    padding: 1rem;
+    width: 10%;
+    text-align: center;
+
+    align-self: center;
+    
+
+}
+
+
+
+
+
+
+/* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
+
+footer {
+
+    background-color: #EEF6FC;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    padding-bottom: 0;
+    justify-content: center;
+    
+
+}
+
+
+.footerContainer {
+
+    display: flex;
+    flex-direction: row;
+
+    
+    gap: 20vw;
+
+}
+
+
+.footerList-item {
+
+    font-size: 1.5rem;
+    color: #0B2D41;
+
+    text-decoration: none;
+
+
+}
+
+
+footer, ul {
+
+    list-style: none;
+    text-align: center;
+
+}
+
+
+.footerLabel {
+
+    border-style: solid;
+    border-width: 0.3rem;
+    border-color: #0B2D41;
+    text-align: center;
+    padding: 0.5rem;
+
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-bottom: 0.5rem;
+
+}
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES  */
+
+
+@media only screen and (max-width: 768px) {
+
+
+/* Header Header Header  */
+
+/* .logo {
+    
+    top: 5px;
+    left: 33%;
+
+} */
+
+
+.nav-bar {
+
+    display: none;
+
+}
+
+.hamburguer {
+
+    display: block;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 1rem;
+
+
+}
+
+
+nav {
+
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+    
+}
+
+
+
+nav ul {
+
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
+    /* margin-top: -0.7%;
+    gap: 2rem; */
+    
+
+}
+
+.nav-item {
+
+    text-decoration: none;
+    color: #0B2D41;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bolder;
+    letter-spacing: 0.3rem;
+
+    transition: 400ms;
+
+}
+
+#hero {
+
+    
+    height: 40vh;
+    width: auto;
+    padding: 1rem;
+
+}
+
+
+
+
+ /* Company Name */
+h1 {  
+
+    font-size: 2.8rem;
+    letter-spacing: 1rem;
+
+}
+
+
+.subName {
+
+    font-size: 1.5rem;
+
+
+}
+
+
+
+/* SLIDESHOW SLIDESHOW SLIDESHOW SLIDESHOW SLIDESHOW */
+
+.slideshow {
+
+    height: 30vh;
+}
+
+
+#nextBtn, #prevBtn {
+
+    padding: 0.5rem;
+
+}
+
+
+
+
+
+/* HOME ABOUT US  */
+
+#aboutUsBox {
+
+    height: 35vh;
+
+}
+
+
+.homeAboutUs {
+
+    font-size: 1.2rem;
+    padding: 1.8rem;
+
+}
+
+
+.warpToProducts {
+
+    border-style: solid;
+    border-color: #EEF6FC;
+    border-radius: 55%;
+    border-width: 0.3rem;
+
+
+    padding: 0.5rem;
+
+    font-size: 0.9rem;
+
+}
+
+#guideContainer {
+
+    display: none;
+
+}
+
+
+/* Contact Home Contact Home */
+
+#contactUsHome {
+
+    height: 60vh;
+    width: 100%;
+
+}
+
+.colorOverlay {
+
+    position: absolute;
+    background-color: #0B2D41;
+
+    width: 50%;
+    height: 60vh;
+
+    transform: skew(15deg);
+    right: 10%;
+    /* padding-right: 6rem; */
+    
+    
+
+
+}
+
+.colorOverlay2 {
+
+    position: absolute;
+    background-color: #0B2D41;
+
+    width: 50%;
+    height: 60vh;
+
+    /* transform: skew(15deg); */
+    right: 0;
+    /* padding-right: 6rem; */
+    
+    
+
+
+}
+
+
+.homeContactText {
+
+    font-size: 1rem;
+    padding: 1rem;
+    padding-top: 2rem;
+
+    text-align: center;
+    line-height: 180%;
+
+}
+
+
+.footerAdditionalContent {
+
+    display: none;
+
+}
+
+
+
+.footerContainer {
+
+    display: flex;
+    flex-direction: column-reverse;
+    
+    gap: 5vh;
+
+}
+
+
+.footerLabel {
+
+    border-style: solid;
+    border-width: 0.3rem;
+    border-color: #0B2D41;
+    text-align: center;
+    padding: 0.5rem;
+
+    /* padding-left: 1.5rem;
+    padding-right: 1.5rem; */
+    margin-bottom: 0.5rem;
+
+}
+
+.footerList-item {
+
+    font-size: 1.5rem;
+    color: #0B2D41;
+
+    text-decoration: none;
+
+
+
+
+}
+
+
+/* CATEGORY BOXES CATEGORY BOXES CATEGORY BOXES */
+
+.boxes {
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    /* padding: 2rem; */
+    background-color: #0B2D41;
+
+
+    
+
+}
+
+.box1 { 
+
+    height: 30vh;
+    width: 70vw;
+
+    padding: 1rem;
+    right: 0;
+
+    margin-left: 5px;
+
+
+}
+
+
+.box2 { 
+
+    padding: 1rem;
+
+    height: 30vh;
+    width: 70vw;
+
+    margin-left: 5px;
+
+
+}
+
+.box1:hover, .box2:hover {
+
+    box-shadow: 10px 10px 10px 0 #EEF6FC;
+
+    background-color: #0B2D41;
+    background-blend-mode: lighten;
+    
+    cursor: pointer;
+
+}
+
+
+.description {
+
+    background-color: #c99418;
+    width: 40vw;
+    font-size: 2rem;
+    color: #EBEBEB;
+    /* text-align: right; */
+
+    padding-left: 8rem;
+
+}
+
+
+}
+
+
+@media only screen and (max-width: 375px) {
+
+
+    .logo {
+    
+        top: 5px;
+        left: %;
+    
+    }
+
+
+}
+
+
+@media only screen and (max-width: 425px) {
+
+
+    .logo {
+    
+        top: 5px;
+        left: 37%;
+    
+    }
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .nav-bar {
+
+        display: none;
+
+    }
+
+    .hamburguer {
+
+        display: block;
+    }
+
+    .logo {
+
+        margin-right: 0;
+
+    }
+
+    nav {
+
+        display: block;
+        justify-content: flex-end;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    
+    
+    
+    nav ul {
+    
+        display: flex;
+        flex-direction: row;
+        
+    
+    }
+    
+    .nav-item {
+    
+        display: flex;
+        flex-direction: row;
+    
+    }
+    
+
+    .boxes {
+
+        display: flex;
+        flex-direction: column;
+    
+        justify-content: center;
+        /* padding: 2rem; */
+        background-color: #0B2D41;
+    
+    
+        
+    
+    }
+
+}
+
+
+
