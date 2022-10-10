@@ -1180,6 +1180,13 @@ h1 {
 
 }
 
+.footerContainer {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
 
 
 

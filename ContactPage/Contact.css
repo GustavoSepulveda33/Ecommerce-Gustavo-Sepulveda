@@ -305,11 +305,21 @@ footer, ul {
     }
 
 
-    .footerAdditionalContent {
+/* FOOTER */
 
-        display: none;
+.footerAdditionalContent {
 
-    }
+    display: none;
+
+}
+
+.footerContainer {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
 
 }
 
