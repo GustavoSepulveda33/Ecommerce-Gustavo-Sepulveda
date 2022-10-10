@@ -874,7 +874,7 @@ h1 {
 
 #hidden , #hidden2, #hidden3, #hidden4, #hidden5, #hidden6, #hidden7, #hidden8, #hidden9, #hidden10, #hidden11, #hidden12  {
 
-    height: 75vh;
+    height: 85vh;
     width: 95.5vw;
 
     background-color: white;
@@ -1225,7 +1225,7 @@ h1 {
 }
 
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
 
 
     #hidden , #hidden2, #hidden3, #hidden4, #hidden5, #hidden6, #hidden7, #hidden8, #hidden9, #hidden10, #hidden11, #hidden12  {
@@ -1254,7 +1254,23 @@ h1 {
 }
 
 
+@media only screen and (min-width: 1440px) {
 
+    #hidden , #hidden2, #hidden3, #hidden4, #hidden5, #hidden6, #hidden7, #hidden8, #hidden9, #hidden10, #hidden11, #hidden12  {
+
+        height: 85vh;
+        width: 95.5vw;
+    
+        background-color: white;
+    
+        display: flex;
+        flex-direction: column; 
+        /* flex-wrap: wrap; */
+    
+        padding: 2rem;
+    }
+
+}
 
 
 
