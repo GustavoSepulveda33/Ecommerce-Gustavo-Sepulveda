@@ -142,7 +142,7 @@ a:hover {
     font-weight: bolder;
 }
 
-.job-form {
+.jobForm {
     display: flex;
     flex-direction: column;
     align-items: center;
